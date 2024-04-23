@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-image: url('../src/assets/wallpapper.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin custom-input($bg-color) {
+    @apply w-5 h-5 z-20;
+    background-color: $bg-color;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+  
+.cmd-base-input-g {
+    @include custom-input(#15803d);
+}
+
+
+.cmd-base-input-b  {
+    @include custom-input(#60a5fa);
+}
+
+
+.cmd-base-input-y  {
+    @include custom-input(#fef08a);
+}
+
+
+.main-container::-webkit-scrollbar {
+    width: 0; 
+}
+
+.main-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
