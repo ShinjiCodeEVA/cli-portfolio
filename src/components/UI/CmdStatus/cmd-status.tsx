@@ -1,7 +1,7 @@
 import { CmdStatusProp } from "./cmd-status.interface"
 import { BiGitBranch } from "react-icons/bi";
 
-export const CmdStatus = ({command, date}: CmdStatusProp) => {
+export const CmdStatus = ({command}: CmdStatusProp) => {
 
   return (      
         command.length !== 0 && 
@@ -11,11 +11,6 @@ export const CmdStatus = ({command, date}: CmdStatusProp) => {
                   <span>{command}</span>
             </div>
             <div className="cmd-base-input-y translate-x-[-40.5px]"></div>
-
-            {/* <div className="flex justify-between items-center w-full">
-              <p>ls</p>
-              <p>{date}</p>
-            </div> */}
         </>
   )
 }
