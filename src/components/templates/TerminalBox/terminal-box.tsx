@@ -15,9 +15,9 @@ export const TerminalBox = () => {
 	}, [cmdHist]);
 
   return (
-    <main className="bg-black bg-opacity-75 w-full max-w-[800px] h-[77vh] max-h-[77vh] font-josefin text-white rounded-md main-container overflow-scroll">
+    <main className="bg-black bg-opacity-75 w-full max-w-[800px] max-h-[600px] font-josefin text-white rounded-md main-container overflow-scroll">
         <Navbar/>
-        <div className="p-2">
+        <div className="p-2 mt-5">
           <p className="mb-2">Today is, {getDateNow()}</p>
           {<RenderCmdHist history={cmdHist}/>}
           <CmdInput addToCmdHist={addToHist}/> 

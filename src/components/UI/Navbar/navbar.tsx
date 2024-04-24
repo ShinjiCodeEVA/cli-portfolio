@@ -2,7 +2,7 @@ import { VscTerminalBash } from "react-icons/vsc";
 
 export const Navbar = () => {
   return (
-    <header className="w-full sm:w-[800px] bg-cyan-blue p-3 rounded-t-md flex items-center fixed z-[99] top-12">
+    <header className="w-full sm:w-[800px] bg-cyan-blue p-3 rounded-t-md flex items-center fixed z-[99]  ">
       <div className="flex gap-1 items-center">
         <div className="h-[8px] w-[8px] rounded bg-cyan-red"></div>
         <div className="h-[8px] w-[8px] rounded bg-cyan-yellow"></div>
